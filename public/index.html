@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>All The News Thats Fit To Scrape</title>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+
+</head>
+
+<body>
+
+  <body data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Display a Bootstrap Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand">Scrape-Tastic Tool</a>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <div class="nav justify-content-end">
+            <!-- <a class="nav-item nav-link" href="https://glacial-savannah-12880.herokuapp.com/articles">View Articles</a>
+            <a class="nav-item nav-link" href="https://glacial-savannah-12880.herokuapp.com/scrape">Scrape New Articles</a>
+            <a class="nav-item nav-link active" href="https://glacial-savannah-12880.herokuapp.com/">Home</a> -->
+            <a class="nav-item nav-link" href="http://localhost:3000/articles">View Articles</a>
+            <a class="nav-item nav-link" href="http://localhost:3000/scrape">Scrape New Articles</a>
+            <a class="nav-item nav-link active" href="http://localhost:3000/">Home</a>
+
+        </div>
+      </div>
+    </nav>
+
+    <div id="wrapper">
+      <h2><i>'Trying to get you some news'</i></h2>
+      <br>
+      <h4><i>Click on an article to add a note</i></h4>
+      <div id="articles"></div>
+      <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+  </html>
